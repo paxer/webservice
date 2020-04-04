@@ -1,7 +1,16 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"github.com/paxer/webservice/models"
+)
 
 func main() {
-	fmt.Println("Hello World")
+	u := models.User{
+		ID: 2,
+		FirstName: "Rob",
+		LastName: "McMillan",
+	}
+
+	fmt.Println(u)
 }
